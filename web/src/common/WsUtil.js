@@ -4,7 +4,7 @@
 */
 import { message } from 'antd';
 
-export function initWs(wsPort = 8003, key = '') {
+export function initWs(wsPort = location.port, key = '') {
   if(!WebSocket){
     throw (new Error('WebSocket is not supportted on this browser'));
   }
